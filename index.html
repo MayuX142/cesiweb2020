@@ -12,13 +12,21 @@ Page 1 : Acceuil -->
 	<title>Entreprise MADERA</title>
 	<link rel="stylesheet" href="style.css">
 	<link rel="script.js" href="script1.js">
-
-	<script src="script.js"></script>
+	<script src="jquery.js"></script>
+    <!--
+    <script>
+        $(function(){
+           $("#includeContent").load("menu.html");
+        });
+    </script>
+	-->
 </head>
 <body>
-	
+
 	<header>
-		<h1> Entreprise MADERA </h1>
+		<div class="titre">
+			<h1> Entreprise MADERA </h1>
+		</div>
 
 		<nav class="menu-principal">
 			<ul>
@@ -29,7 +37,7 @@ Page 1 : Acceuil -->
 			</ul>
 		</nav>
 	</header>
-
+	
 	<main id="main-content">
 		<h1> Madera rend le modulaire confortable </h1>
 		<p> When Dave asks HAL to open the pod bay door, HAL answers: <q cite="https://www.imdb.com/title/tt0062622/quotes/qt0396921">I'm sorry, Dave. I'm afraid I can't do that.</q></p>
@@ -38,7 +46,7 @@ Page 1 : Acceuil -->
 			<h2> Nos sites </h2>
 
 			<article class="article1">
-				<h3> Site de Lille </h3>
+				<h3> Site de <a style="color:red;">Lille</a> </h3>
 				<p> Le site de Lille est le siège social du Groupe et il est historiquement le premier site du groupe. Il comprend les locaux de bureau de la Direction du Groupe ainsi qu’un site de production et un entrepôt de stockage des matières premières et des produits finis en attente d’expédition. Le site de Lille s’est spécialisé dans l’activité « Particuliers du Groupe ». Il regroupe tous les services nécessaires à la production et au commerce de ces produits finis. </p>
 			</article>
 
@@ -60,7 +68,7 @@ Page 1 : Acceuil -->
 
 		<aside id="entreprise">
 			<h2> Description de l'entreprise </h2>
-			<p> Texte de présentation bref. Consulter la structure organisationnelle de l'entreprise : <a href="page2.html">la page 2</a> </p>
+			<p> Texte de présentation bref. Consulter la <a href="page2.html">structure organisationnelle de l'entreprise</a> </p>
 		</aside>
 
 		<section class="section-produits">
@@ -80,12 +88,9 @@ Page 1 : Acceuil -->
 
 	<footer>
 		<p> Nous contacter </p>
-		<!--<p>
-			<a href="http://jigsaw.w3.org/css-validator/check/referer">
-			<img style="border:0;width:88px;height:31px" src="//jigsaw.w3.org/css-validator/images/vcss-blue" alt="CSS Valide !" />
-			</a>
-		</p>-->
 	</footer>
+
+	<script src="smooth_scroll.js"></script>
   
 </body>
 </html>
