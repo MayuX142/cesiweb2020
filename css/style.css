@@ -22,19 +22,6 @@ body {
 
 /* GRID PAGE INDEX */
 
-/*.wrapper {
-	max-width: 940px;
-	margin: 0 auto;
-	display: grid;
-	grid-template-columns: 1fr 5fr;
-	grid-gap: 10px;
-}*/
-
-/*.header, .footer {
-	grid-column: 1 / -1;
-}*/
-
-
 .wrapper {
 	display: grid;
 	grid-gap: 1em;
@@ -59,16 +46,15 @@ body {
 		display : grid;
 		grid-gap: 1em;
 		grid-template-areas:
-			"section"
-			"article"
+			"sites entreprise";
 	}
 
-		.section {
-			grid-area : section;
+		.sites {
+			grid-area : sites;
 		}
 
-		.article {
-			grid-area : article;
+		.entreprise {
+			grid-area : entreprise;
 		}
 
 	.footer {
