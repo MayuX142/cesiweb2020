@@ -14,6 +14,8 @@ body {
 	color: grey;
 }
 
+/* GRID */
+
 
 /* HEADER */
 header {
@@ -73,19 +75,27 @@ ul {
 
 /* ARTICLE */
 
-/*.article1 {
-	background-color: white;
-}
-
+.article1 {
+	 width : 300px;
+	 padding-top: 30px;
+	 background : white;
+	display : inline-block;
+ }
 .article2 {
-	background-color: white;
+	width : 300px;
+	padding-top: 30px;
+	background : white;
+	display : inline-block;
 }
-
 .article3 {
-	background-color: white;
+	width : 300px;
+	padding-top: 30px;
+	background : white;
+	display : inline-block;
 }
 
-.article4 {
+
+/*.article4 {
 	background-color: white;
 }*/
 
@@ -126,3 +136,5 @@ footer {
 		footer a:active {
 			color: grey;
 		}
+/* PAGE 2 */
+
