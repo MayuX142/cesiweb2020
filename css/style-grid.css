@@ -24,8 +24,34 @@ body {
 
 /* NAV */
 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+}
 
-/* GRID PAGE INDEX */
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: black;
+    color: grey;
+    text-decoration: none;
+}
+
+
+/* CONTENT */
 
 .wrapper {
     display: grid;
@@ -41,13 +67,12 @@ body {
     }
 
 
-
     .header {
         grid-area: header;
         display : grid;
         grid-gap: 1em;
         grid-template-areas:
-                "logo primary-nav";
+                "logo1 primary-nav";
     }
 
         .logo { grid-area: logo; }
@@ -78,16 +103,13 @@ body {
 
             .presentation-articles { grid-area: presentation-articles; background-color: #ede68a; }
             .article1 { grid-area: article1; background-color: antiquewhite; }
-            .article2 { grid-area: article2; background-color: aquamarine; }
-            .article3 { grid-area: article3; background-color: lavender; }
-            .article4 { grid-area: article4; background-color: slateblue; }
-        .entreprise {
-            grid-area : entreprise;
-        }
+            .article2 { grid-area: article2; background-color: antiquewhite; }
+            .article3 { grid-area: article3; background-color: antiquewhite; }
+            .article4 { grid-area: article4; background-color: antiquewhite; }
 
+    .entreprise { grid-area : entreprise; background-color: red;}
 
-.footer {
-}
+    .footer { grid-area: footer; background-color: blueviolet; }
 
 
 
@@ -118,10 +140,9 @@ body {
  /* PAGE 2 */
 /**********/
 
-/* GRID PAGE 2 */
+/* CONTENT */
 
 .wrapper2 {
-    max-width: 1000px;
     background-color: yellow;
     display: grid;
     /*grid-template-columns: 1fr 10fr;
@@ -137,6 +158,7 @@ body {
 }
 
 .box2{
+
     background-color: #444;
     color: #fff;
     border-radius: 5px;
@@ -144,13 +166,6 @@ body {
     font-size: 90%;
     text-align : center;
 }
-
-/*.wrapper2 {
-grid-template-columns: [col] 100px [col] 100px [col] 100px [col] 100px;
-grid-template-rows: [row] auto [row] auto [row] ;
-background-color: #fff;
-color: #444;
-}*/
 
 .orga {
     grid-column-start: 1;
