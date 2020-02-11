@@ -1,0 +1,285 @@
+/* LE TROCQUER Typhaine
+RIL option DEVOPS (2019-2021)
+FEUILLE DE STYLE
+Projet : HTML5-CSS3-JavaScript 2020 */
+
+/* PETITS +
+.maclass
+.monid */
+
+
+
+  /**********/
+ /* PAGE 1 */
+/**********/
+
+
+/* BODY */
+
+body {
+    background-color: #2f3032;
+    color: grey;
+}
+
+
+/* NAV */
+
+
+/* GRID PAGE INDEX */
+
+.wrapper {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-areas:
+            "header"
+            "primary-nav"
+            "main-content"
+            "footer";
+}
+
+    .box {
+    }
+
+
+
+    .header {
+        grid-area: header;
+        display : grid;
+        grid-gap: 1em;
+        grid-template-areas:
+                "logo primary-nav";
+    }
+
+        .logo { grid-area: logo; }
+
+        .primary-nav { grid-area: primary-nav; }
+
+    .main-content {
+        grid-area: main-content;
+        display : grid;
+        grid-gap: 1em;
+        grid-template-areas:
+                "sites entreprise"
+                "sites entreprise"
+                "sites entreprise";
+    }
+
+        .sites {
+            grid-area : sites;
+            display : grid;
+            grid-gap: 1em;
+            grid-template-areas:
+                    "presentation-articles"
+                    "article1"
+                    "article2"
+                    "article3"
+                    "article4";
+        }
+
+            .presentation-articles { grid-area: presentation-articles; background-color: #ede68a; }
+            .article1 { grid-area: article1; background-color: antiquewhite; }
+            .article2 { grid-area: article2; background-color: aquamarine; }
+            .article3 { grid-area: article3; background-color: lavender; }
+            .article4 { grid-area: article4; background-color: slateblue; }
+        .entreprise {
+            grid-area : entreprise;
+        }
+
+
+.footer {
+}
+
+
+
+
+
+/* CSS CODE FOR MOBILE HERE */
+
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 992px) {
+
+}
+
+@media screen and (min-width: 1200px) {
+
+}
+
+
+
+
+
+
+
+
+  /**********/
+ /* PAGE 2 */
+/**********/
+
+/* GRID PAGE 2 */
+
+.wrapper2 {
+    max-width: 1000px;
+    background-color: yellow;
+    display: grid;
+    /*grid-template-columns: 1fr 10fr;
+    grid-template-rows: 1fr 10fr;*/
+    /*grid-template-columns: [col] 100px [col] 100px [col] 100px [col] 100px [col] 100px [col] 100px [col] 100px [col] 100px;*/
+    grid-template-columns : repeat(9,[col] 100px);
+    grid-template-rows: [row] auto [row] auto [row] auto;
+    grid-gap: 10px;
+    /*********************/
+    margin: 30px;
+    font-family: 'Open Sans', 'sans-serif';
+    color: black;
+}
+
+.box2{
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 90%;
+    text-align : center;
+}
+
+/*.wrapper2 {
+grid-template-columns: [col] 100px [col] 100px [col] 100px [col] 100px;
+grid-template-rows: [row] auto [row] auto [row] ;
+background-color: #fff;
+color: #444;
+}*/
+
+.orga {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.orga1 {
+    grid-column: col  / span 3 ;
+    grid-row: row 2 ;
+}
+
+.item-1a {
+    grid-column: col 2 / span 1 ;
+    grid-row: row 3 ;
+}
+
+.item-1b {
+    grid-column: col 2 / span 1 ;
+    grid-row: row 4 ;
+}
+
+.item-1c {
+    grid-column: col 2 / span 1 ;
+    grid-row: row 5 ;
+}
+
+.item-1d {
+    grid-column: col 2 / span 1 ;
+    grid-row: row 6 ;
+}
+
+.item-1e {
+    grid-column: col 2 / span 1 ;
+    grid-row: row 7 ;
+}
+
+.orga2 {
+    grid-column: col 4 / span 3 ;
+    grid-row: row 2 ;
+}
+
+.item-2a {
+    grid-column: col 5 / span 1 ;
+    grid-row: row 3 ;
+}
+
+.item-2b {
+    grid-column: col 5 / span 1 ;
+    grid-row: row 4 ;
+}
+
+.item-2c {
+    grid-column: col 5 / span 1 ;
+    grid-row: row 5 ;
+}
+
+.item-2d {
+    grid-column: col 5 / span 1 ;
+    grid-row: row 6 ;
+}
+
+.orga3 {
+    grid-column: col 7 / span 3 ;
+    grid-row: row 2 ;
+}
+
+.item-3a {
+    grid-column: col 7 / span 1 ;
+    grid-row: row 3 ;
+}
+
+.item-3b {
+    grid-column: col 7 / span 1 ;
+    grid-row: row 4 ;
+}
+
+.item-3c {
+    grid-column: col 7 / span 1 ;
+    grid-row: row 5 ;
+}
+
+.item-3d {
+    grid-column: col 7 / span 1 ;
+    grid-row: row 6 ;
+}
+
+.item-3e {
+    grid-column: col 7 / span 1 ;
+    grid-row: row 7 ;
+}
+
+.item-3f {
+    grid-column: col 7 / span 1 ;
+    grid-row: row 8 ;
+}
+
+.item-3g {
+    grid-column: col 9 / span 1 ;
+    grid-row: row 3 ;
+}
+
+.item-3h {
+    grid-column: col 9 / span 1 ;
+    grid-row: row 4;
+}
+
+.item-3i {
+    grid-column: col 9 / span 1 ;
+    grid-row: row 5 ;
+}
+
+.item-3j {
+    grid-column: col 9 / span 1 ;
+    grid-row: row 6 ;
+}
+
+.item-3k {
+    grid-column: col 9 / span 1 ;
+    grid-row: row 7 ;
+}
+
+.item-3l {
+    grid-column: col 9 / span 1 ;
+    grid-row: row 8 ;
+}
+
+.item-3m {
+    grid-column: col 9 / span 1 ;
+    grid-row: row 9 ;
+}

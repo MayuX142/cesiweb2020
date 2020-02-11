@@ -13,6 +13,7 @@ Projet : HTML5-CSS3-JavaScript 2020 */
  /* PAGE 1 */
 /**********/
 
+
 /* BODY */
 body {
 	background-color: #2f3032;
@@ -32,34 +33,27 @@ body {
 			"footer"
 }
 
-	.header {
-		grid-area: header;
-	}
+	.header { grid-area: header; }
 
-	.primary-nav {
-		grid-area: primary-nav;
-	}
+	.primary-nav { grid-area: primary-nav; }
 
 	.main-content {
 		grid-area: main-content;
-
 		display : grid;
 		grid-gap: 1em;
 		grid-template-areas:
 			"sites entreprise";
 	}
 
-		.sites {
-			grid-area : sites;
-		}
+		.sites { grid-area : sites; }
 
-		.entreprise {
-			grid-area : entreprise;
-		}
+		.entreprise { grid-area : entreprise; }
 
-	.footer {
-		grid-area: footer;
-	}
+	.footer { grid-area: footer; }
+
+
+
+
 
 
 /* MEDIA QUERIES */
@@ -90,6 +84,7 @@ body {
 	}
 
 
+
 /* MAIN-CONTENT */
 
 @media only screen and (min-width: 600px)  {
@@ -107,7 +102,7 @@ body {
 	.content {
 		grid-template-columns: 20% auto;
 		grid-template-areas:
-			"section  section section
+			"section  section section"
 			"article article article";
 	}
 }
@@ -175,40 +170,7 @@ ul {
 		    text-decoration: none;
 		}
 
-/* MAIN */
 
-
-/* SECTION */
-
-
-/* ARTICLE */
-
-/*.article1 {
-	 width : 300px;
-	 padding-top: 30px;
-	 background : white;
-	display : inline-block;
- }
-.article2 {
-	width : 300px;
-	padding-top: 30px;
-	background : white;
-	display : inline-block;
-}
-.article3 {
-	width : 300px;
-	padding-top: 30px;
-	background : white;
-	display : inline-block;
-}*/
-
-
-/*.article4 {
-	background-color: white;
-}*/
-
-
-/* ASIDE */
 
 
 
@@ -244,6 +206,11 @@ footer {
 		footer a:active {
 			color: grey;
 		}
+
+
+
+
+
 
 
 
@@ -417,3 +384,7 @@ color: #444;
 	grid-column: col 9 / span 1 ;
 	grid-row: row 9 ;
 }
+
+
+
+
