@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="46d02630-1c77-423a-a1dc-c5d866bc0897" name="Tcesiweb2020" url="http://ril.nte.ovh">
+        <fileTransfer host="ril.nte.ovh" port="2834" accessType="FTPS">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="2834" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

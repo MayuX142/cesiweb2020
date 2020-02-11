@@ -151,6 +151,7 @@ li a:hover {
     grid-template-columns : repeat(9,[col] 100px);
     grid-template-rows: [row] auto [row] auto [row] auto;
     grid-gap: 10px;
+    justify-content: center;
     /*********************/
     margin: 30px;
     font-family: 'Open Sans', 'sans-serif';
