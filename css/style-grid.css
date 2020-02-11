@@ -72,7 +72,7 @@ li a:hover {
         display : grid;
         grid-gap: 1em;
         grid-template-areas:
-                "logo1 primary-nav";
+                "logo1 primary-nav primary-nav primary-nav";
     }
 
         .logo { grid-area: logo; }
