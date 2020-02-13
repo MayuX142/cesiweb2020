@@ -9,23 +9,16 @@ Page 1 : Accueil -->
 <html lang="fr">
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="robots" content="noindex, nofollow">
 	<title>Entreprise MADERA</title>
 	<!--<link rel="stylesheet" href="css/style.css">-->
 	<link rel="stylesheet" href="css/style-grid.css"/>
 	<link rel="stylesheet" href="css/menu.css"/>
-	<link rel="script.js" href="js/smooth_scroll.js"/>
+	<link rel="script" href="js/smooth_scroll.js"/>
 	<link href="images/logo.jpg" rel="shortcut icon" type="image/vnd.microsoft.icon" />
 	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-	<link rel="script" href="js/carousel.js"/>
-    <!--
-    <script>
-        $(function(){
-           $("#includeContent").load("menu.html");
-        });
-    </script>
-	-->
+	<script src="js/carousel.js"></script>
 </head>
 <body>
 
@@ -46,25 +39,19 @@ Page 1 : Accueil -->
 		<nav class="box primary-nav" aria-label="Primary" >
 			<ul>
 				<li><a href="index.html"> Accueil </a></li>
-				<li><a href="#entreprise"> L'entreprise </a></li>
-				<li><a href="#section-collab-sites"> Nous trouver </a></li>
+				<li><a href="#ancre-entreprise"> L'entreprise </a></li>
+				<li><a href="#footer"> Nous trouver </a></li>
 				<li><a href="contact.html"> Nous contacter </a></li>
 			</ul>
 		</nav>
 
 	</header>
 
-	<template class="template">
-		<hooper>
-			<slide>
-				<img src="images/maison-mod-3.jpg" alt="Slide 1"/>
-			</slide>
-			<slide>
-				slide 2
-			</slide>
-			<hooper-navigation slot="hooper-addons"></hooper-navigation>
-		</hooper>
-	</template>
+	<image-slider class="template">
+		<!--<img :src="images/maison-mod-3.jpg" />-->
+		<img :src="images[currentNumber % images.length]" />
+	</image-slider>
+
 
 
 	<main class="box main-content">
@@ -82,7 +69,6 @@ Page 1 : Accueil -->
 		</aside>
 
 		<section class="sites">
-
 			<article class="article1">
 				<h4> Site de <a style="color:red;">Lille</a> </h4>
 				<p> Le site de Lille est le siège social du Groupe et il est historiquement le premier site du groupe. Il comprend les locaux de bureau de la Direction du Groupe ainsi qu’un site de production et un entrepôt de stockage des matières premières et des produits finis en attente d’expédition. Le site de Lille s’est spécialisé dans l’activité « Particuliers du Groupe ». Il regroupe tous les services nécessaires à la production et au commerce de ces produits finis. </p>
@@ -127,6 +113,35 @@ Page 1 : Accueil -->
 			</picture>
 			<!-- intégrer le tag picture pour diviser article en 2 section : texte et picture -->
 		</section>
+
+		<div id="ancre-entreprise" class="wrapper2">
+			<div class="box2 orga">Direction Générale</div>
+			<div class="box2 orga1">Direction RH - AF - Informatique</div>
+			<div class="box2 item-1a">Service RH</div>
+			<div class="box2 item-1b">Service Comptabilité</div>
+			<div class="box2 item-1c">Service Juridique</div>
+			<div class="box2 item-1d">Service Administratif</div>
+			<div class="box2 item-1e">Service Informatique</div>
+			<div class="box2 orga2">Direction Commerciale</div>
+			<div class="box2 item-2a">BU Particuliers</div>
+			<div class="box2 item-2b">BU Collectivités</div>
+			<div class="box2 item-2c">BU Maisons Modulaires</div>
+			<div class="box2 item-2d">Magasins</div>
+			<div class="box2 orga3">Direction de Production</div>
+			<div class="box2 item-3a">Service Production Particuliers</div>
+			<div class="box2 item-3b">Service Production Collectivités</div>
+			<div class="box2 item-3c">Service Installation Particuliers</div>
+			<div class="box2 item-3d">Service Installation Collectivités</div>
+			<div class="box2 item-3e">Service Installation Maisons Modulaires</div>
+			<div class="box2 item-3f">Service Production Maisons Modulaires</div>
+			<div class="box2 item-3g">Service Achats</div>
+			<div class="box2 item-3h">Service Qualité</div>
+			<div class="box2 item-3i">Service Après Vente</div>
+			<div class="box2 item-3j">Service Stocks</div>
+			<div class="box2 item-3k">Service R&D</div>
+			<div class="box2 item-3l">Service Logistique</div>
+			<div class="box2 item-3m">Service Bureau d'Etudes</div>
+		</div>
 
 	</main>
 
