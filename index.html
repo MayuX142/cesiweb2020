@@ -10,13 +10,15 @@ Page 1 : Accueil -->
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport">
+	<meta name="robots" content="noindex, nofollow">
 	<title>Entreprise MADERA</title>
 	<!--<link rel="stylesheet" href="css/style.css">-->
-	<link rel="stylesheet" href="css/style-grid.css">
-	<link rel="stylesheet" href="css/menu.css">
-	<link rel="script.js" href="js/smooth_scroll.js">
+	<link rel="stylesheet" href="css/style-grid.css"/>
+	<link rel="stylesheet" href="css/menu.css"/>
+	<link rel="script.js" href="js/smooth_scroll.js"/>
 	<link href="images/logo.jpg" rel="shortcut icon" type="image/vnd.microsoft.icon" />
-	<script src="jquery.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<link rel="script" href="js/carousel.js"/>
     <!--
     <script>
         $(function(){
@@ -34,25 +36,51 @@ Page 1 : Accueil -->
 			<img
 					src="images/logo.jpg"
 					alt="Logo du site"
-					height="300px"
-					width="300px"
+					height="100px"
+					width="100px"
 			/>
 		</a>
 
-		<h1>  Madera rend le modulaire confortable </h1>
+		<h1 class="titre">  Madera rend le modulaire confortable </h1>
 
-		<nav class="box primary-nav" aria-label="Primary">
-			<a href="index.html"> Accueil </a>
-			<a href="#entreprise"> L'entreprise </a>
-			<a href="#section-collab-sites"> Où nous trouvez </a>
-			<a href="contact.html"> Nous contacter </a>
-			<div class="animation start-home"></div>
+		<nav class="box primary-nav" aria-label="Primary" >
+			<ul>
+				<li><a href="index.html"> Accueil </a></li>
+				<li><a href="#entreprise"> L'entreprise </a></li>
+				<li><a href="#section-collab-sites"> Nous trouver </a></li>
+				<li><a href="contact.html"> Nous contacter </a></li>
+			</ul>
 		</nav>
 
 	</header>
 
+	<template class="template">
+		<hooper>
+			<slide>
+				<img src="images/maison-mod-3.jpg" alt="Slide 1"/>
+			</slide>
+			<slide>
+				slide 2
+			</slide>
+			<hooper-navigation slot="hooper-addons"></hooper-navigation>
+		</hooper>
+	</template>
+
+
 	<main class="box main-content">
 		<!--<p> When Dave asks HAL to open the pod bay door, HAL answers: <q cite="https://www.imdb.com/title/tt0062622/quotes/qt0396921">I'm sorry, Dave. I'm afraid I can't do that.</q></p>-->
+
+		<aside class="entreprise" aria-label="Sidebar">
+			<section class="details">
+				<h2> Détails sur l'entreprise </h2>
+				<p> Texte de présentation bref. Consulter la <a href="trombinoscope.html">structure organisationnelle de l'entreprise</a> </p>
+			</section>
+			<section class="share">
+				<h2> Share </h2>
+				<p> Liens réseaux sociaux </p>
+			</section>
+		</aside>
+
 		<section class="sites">
 
 			<article class="article1">
@@ -100,16 +128,6 @@ Page 1 : Accueil -->
 			<!-- intégrer le tag picture pour diviser article en 2 section : texte et picture -->
 		</section>
 
-		<aside class="entreprise" aria-label="Sidebar">
-			<section class="details">
-				<h2> Détails sur l'entreprise </h2>
-				<p> Texte de présentation bref. Consulter la <a href="trombinoscope.html">structure organisationnelle de l'entreprise</a> </p>
-			</section>
-			<section class="share">
-				<h2> Share </h2>
-				<p> Liens réseaux sociaux </p>
-			</section>
-		</aside>
 	</main>
 
 	<footer class="box footer">

@@ -1,6 +1,6 @@
 /* LE TROCQUER Typhaine
 RIL option DEVOPS (2019-2021)
-FEUILLE DE STYLE
+FEUILLE DE STYLE - Grid
 Projet : HTML5-CSS3-JavaScript 2020 */
 
 /* PETITS +
@@ -24,86 +24,95 @@ body {
 
 /* NAV */
 
-/*ul {
+
+
+ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: white;
+    text-align: center;
 }
 
 li {
-    float: left;
+    float: center;
+    display: inline;
+    margin : 50px;
+    padding : 10px;
 }
 
 li a {
-    display: block;
     color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    display:inline-block;
 }
 
 li a:hover {
     background-color: black;
     color: grey;
     text-decoration: none;
-}*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 
 /* CONTENT */
 
 .wrapper {
     display: grid;
-    grid-gap: 1em;
+    grid-gap: 0em;
     grid-template-areas:
-            "header"
-            "primary-nav"
-            "main-content"
-            "footer";
+            "heander header"
+            "primary-nav primary-nav"
+            "entreprise template"
+            "entreprise template"
+            "entreprise main-content"
+            "footer footer";
 }
 
     .box {
+
     }
 
 
     .header {
         grid-area: header;
         display : grid;
-        grid-gap: 1em;
+        grid-gap: 0em;
         grid-template-areas:
-                "logo1 primary-nav primary-nav primary-nav";
+                "logo1 titre"
+                "primary-nav primary-nav";
     }
 
-        .logo { grid-area: logo; }
+        .logo {
+            grid-area: logo;
+            text-align: right;
+        }
 
-        .primary-nav { grid-area: primary-nav; }
+        .titre {
+            grid-area: titre;
+            text-align: left;
+        }
+
+        .primary-nav {
+            grid-area: primary-nav;
+            justify-items: center;
+            grid-gap: 1em;
+        }
+
+    .template {
+        grid-area: template;
+    }
 
     .main-content {
         grid-area: main-content;
         display : grid;
         grid-gap: 1em;
         grid-template-areas:
-                "sites entreprise"
-                "sites entreprise"
-                "sites entreprise";
+                "entreprise sites"
+                "entreprise sites"
+                "entreprise sites";
     }
 
         .sites {
@@ -157,9 +166,14 @@ li a:hover {
                 background-color: white;
             }
 
-
-
-    .entreprise { grid-area : entreprise; background-color: red;}
+    .entreprise {
+        grid-area : entreprise;
+        background-color: #EAFFB7;
+        /*grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 3;*/
+    }
 
     .footer { grid-area: footer; background-color: blueviolet; }
 
@@ -211,7 +225,6 @@ li a:hover {
 }
 
 .box2{
-
     background-color: #444;
     color: #fff;
     border-radius: 5px;
