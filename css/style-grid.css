@@ -21,7 +21,7 @@ html {
 }
 
 body {
-   background-color: #2f3032;
+    background-color: #2f3032;
     color: grey;
 }
 
@@ -31,12 +31,18 @@ body {
 
 
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+    /*list-style-type: none;
     overflow: hidden;
-    background-color: white;
+    background-color: #2f3032;
     text-align: center;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    margin-top: 40px;
+    padding: 24px;*/
+    margin-top: 10px;
+    padding: 24px;
+    text-align: center;
+    font-family: Raleway;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
 
 li {
@@ -44,20 +50,34 @@ li {
     display: inline;
     margin : 50px;
     padding : 10px;
+    font-family: 'Raleway', sans-serif;
 }
 
 li a {
-    color: black;
+    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     display:inline-block;
 }
 
-li a:hover {
-    background-color: black;
-    color: grey;
+.link-3 {
+    transition: 0.4s;
+    color: #ffffff;
+    font-size: 20px;
     text-decoration: none;
+    padding: 0 10px;
+    margin: 0 10px;
+}
+.link-3:hover {
+   /* background-color: #ffffff;*/
+    color: #EAFFB7;
+    padding: 24px 10px;
+}
+.link-3:active {
+    /* background-color: #ffffff;*/
+    color: #EAFFB7;
+    padding: 24px 10px;
 }
 
 
@@ -132,7 +152,10 @@ li a:hover {
 
             .article1 {
                 grid-area: article1;
-                background-color: antiquewhite;
+               /* background-color: antiquewhite;*/
+                text-align: justify;
+                font-family: 'Ubuntu', sans-serif;
+                padding: 4em;
             }
 
             .photo1 {
@@ -143,6 +166,9 @@ li a:hover {
             .article2 {
                 grid-area: article2;
                 background-color: antiquewhite;
+                text-align: justify;
+                font-family: 'Ubuntu', sans-serif;
+                padding: 4em;
             }
 
             .photo2 {
@@ -153,6 +179,9 @@ li a:hover {
             .article3 {
                 grid-area: article3;
                 background-color: antiquewhite;
+                text-align: justify;
+                font-family: 'Ubuntu', sans-serif;
+                padding: 4em;
             }
 
             .photo3 {
@@ -163,6 +192,9 @@ li a:hover {
             .article4 {
                 grid-area: article4;
                 background-color: antiquewhite;
+                text-align: justify;
+                font-family: 'Ubuntu', sans-serif;
+                padding: 4em;
             }
 
             .photo4 {
@@ -178,7 +210,10 @@ li a:hover {
         height: 100vh;*/
     }
 
-    .footer { grid-area: footer; background-color: blueviolet; }
+    .footer {
+        grid-area: footer;
+        /*background-color: blueviolet; */
+    }
 
 
 

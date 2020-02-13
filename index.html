@@ -12,11 +12,18 @@ Page 1 : Accueil -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="robots" content="noindex, nofollow">
 	<title>Entreprise MADERA</title>
-	<!--<link rel="stylesheet" href="css/style.css">-->
+	<link href="images/logo.jpg" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+
+	<!-- STYLE SHEETS-->
 	<link rel="stylesheet" href="css/style-grid.css"/>
 	<link rel="stylesheet" href="css/menu.css"/>
+
+	<!-- FONTS -->
+	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+
+	<!-- SCRIPTS -->
 	<link rel="script" href="js/smooth_scroll.js"/>
-	<link href="images/logo.jpg" rel="shortcut icon" type="image/vnd.microsoft.icon" />
 	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 	<script src="js/carousel.js"></script>
 </head>
@@ -34,14 +41,14 @@ Page 1 : Accueil -->
 			/>
 		</a>
 
-		<h1 class="titre">  Madera rend le modulaire confortable </h1>
+		<h1 class="titre" style="font-family: 'Raleway', sans-serif; color: #EAFFB7;">  Madera rend le modulaire confortable </h1>
 
 		<nav class="box primary-nav" aria-label="Primary" >
-			<ul>
-				<li><a href="index.html"> Accueil </a></li>
-				<li><a href="#ancre-entreprise"> L'entreprise </a></li>
-				<li><a href="#footer"> Nous trouver </a></li>
-				<li><a href="contact.html"> Nous contacter </a></li>
+			<ul id="nav-3">
+				<li><a class="link-3" href="index.html"> Accueil </a></li>
+				<li><a class="link-3" href="#ancre-entreprise"> L'entreprise </a></li>
+				<li><a class="link-3" href="#footer"> Nous trouver </a></li>
+				<li><a class="link-3" href="contact.html"> Nous contacter </a></li>
 			</ul>
 		</nav>
 
@@ -154,11 +161,63 @@ Page 1 : Accueil -->
 					width="150px"
 			/>
 		</a>
-		<p>
-			ACCUEIL
-			ENTREPRISE
-			CONTACT
-		</p>
+
+		<form
+				id="app"
+				@submit="checkForm"
+				action="https://vuejs.org/"
+				method="post"
+		>
+
+			<p v-if="errors.length">
+				<b>Please correct the following error(s):</b>
+				<ul>
+					<li v-for="error in errors">{{ error }}</li>
+				</ul>
+			</p>
+
+			<p>
+				<label for="name">Name</label>
+				<input
+						id="name"
+						v-model="name"
+						type="text"
+						name="name"
+				>
+			</p>
+
+			<p>
+				<label for="age">Age</label>
+				<input
+						id="age"
+						v-model="age"
+						type="number"
+						name="age"
+						min="0"
+				>
+			</p>
+
+			<p>
+				<label for="movie">Favorite Movie</label>
+				<select
+						id="movie"
+						v-model="movie"
+						name="movie"
+				>
+					<option>Star Wars</option>
+					<option>Vanilla Sky</option>
+					<option>Atomic Blonde</option>
+				</select>
+			</p>
+
+			<p>
+				<input
+						type="submit"
+						value="Submit"
+				>
+			</p>
+
+		</form>
 	</footer>
 
 </div>
