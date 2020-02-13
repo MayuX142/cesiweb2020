@@ -17,14 +17,14 @@ Projet : HTML5-CSS3-JavaScript 2020 */
 /* BODY */
 
 body {
-    background-color: #2f3032;
+   background-color: #2f3032;
     color: grey;
 }
 
 
 /* NAV */
 
-ul {
+/*ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -48,7 +48,95 @@ li a:hover {
     background-color: black;
     color: grey;
     text-decoration: none;
+}*/
+
+nav {
+    margin: 27px auto 0;
+
+    position: relative;
+    width: 590px;
+    height: 50px;
+    background-color: #34495e;
+    border-radius: 8px;
+    font-size: 0;
 }
+    nav a {
+        line-height: 50px;
+        height: 100%;
+        font-size: 15px;
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        text-decoration: none;
+        text-transform: uppercase;
+        text-align: center;
+        color: white;
+        cursor: pointer;
+    }
+
+    nav .animation {
+        position: absolute;
+        height: 100%;
+        top: 0;
+        z-index: 0;
+        transition: all .5s ease 0s;
+        border-radius: 8px;
+    }
+
+        a:nth-child(1) {
+            width: 100px;
+        }
+
+        a:nth-child(2) {
+            width: 110px;
+        }
+
+        a:nth-child(3) {
+            width: 100px;
+        }
+
+        a:nth-child(4) {
+            width: 160px;
+        }
+
+    nav .start-accueil, a:nth-child(1):hover~.animation {
+        width: 100px;
+        left: 0;
+        background-color: #234000;
+    }
+
+    nav .start-about, a:nth-child(2):hover~.animation {
+        width: 110px;
+        left: 100px;
+        background-color: #468000;
+    }
+
+    nav .start-blog, a:nth-child(3):hover~.animation {
+        width: 100px;
+        left: 210px;
+        background-color: #69BF00;
+    }
+
+    nav .start-portefolio, a:nth-child(4):hover~.animation {
+        width: 160px;
+        left: 310px;
+        background-color: #7FE600;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* CONTENT */
@@ -93,19 +181,29 @@ li a:hover {
             grid-area : sites;
             display : grid;
             grid-gap: 1em;
-            grid-template-areas:
-                    "presentation-articles"
-                    "article1"
-                    "article2"
-                    "article3"
-                    "article4";
+            grid-template-areas;
+                    "article1 photo1"
+                    "photo2 article2"
+                    "article3 photo3"
+                    "photo4 article4";
         }
 
-            .presentation-articles { grid-area: presentation-articles; background-color: #ede68a; }
-            .article1 { grid-area: article1; background-color: antiquewhite; }
-            .article2 { grid-area: article2; background-color: antiquewhite; }
-            .article3 { grid-area: article3; background-color: antiquewhite; }
-            .article4 { grid-area: article4; background-color: antiquewhite; }
+            .article1 {
+                grid-area: article1;
+                background-color: antiquewhite;
+            }
+            .article2 {
+                grid-area: article2;
+                background-color: antiquewhite;
+            }
+            .article3 {
+                grid-area: article3;
+                background-color: antiquewhite;
+            }
+            .article4 {
+                grid-area: article4;
+                background-color: antiquewhite;
+            }
 
     .entreprise { grid-area : entreprise; background-color: red;}
 

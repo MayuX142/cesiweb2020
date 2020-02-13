@@ -40,44 +40,72 @@ Page 1 : Accueil -->
 
 		<h1>  Madera rend le modulaire confortable </h1>
 
-		<nav class="box primary-nav" aria-label="Primary">
+		<!--<nav class="box primary-nav" aria-label="Primary">
 			<ul>
 				<li><a href="index.html"> Accueil </a></li>
 				<li><a href="#entreprise"> L'entreprise </a></li>
 				<li><a href="#section-collab-sites"> Où nous trouvez </a></li>
 				<li><a href="contact.html"> Nous contacter </a></li>
 			</ul>
+		</nav>-->
+
+		<nav class="box primary-nav" aria-label="Primary">
+			<a href="index.html"> Accueil </a>
+			<a href="#entreprise"> L'entreprise </a>
+			<a href="#section-collab-sites"> Où nous trouvez </a>
+			<a href="contact.html"> Nous contacter </a>
+			<div class="animation start-home"></div>
 		</nav>
+
 	</header>
 	
 	<main class="box main-content">
 		<!--<p> When Dave asks HAL to open the pod bay door, HAL answers: <q cite="https://www.imdb.com/title/tt0062622/quotes/qt0396921">I'm sorry, Dave. I'm afraid I can't do that.</q></p>-->
 		<section class="sites">
-			<div class="presentation-articles"> <h3> Nos sites </h3> </div>
 
 			<article class="article1">
 				<h4> Site de <a style="color:red;">Lille</a> </h4>
 				<p> Le site de Lille est le siège social du Groupe et il est historiquement le premier site du groupe. Il comprend les locaux de bureau de la Direction du Groupe ainsi qu’un site de production et un entrepôt de stockage des matières premières et des produits finis en attente d’expédition. Le site de Lille s’est spécialisé dans l’activité « Particuliers du Groupe ». Il regroupe tous les services nécessaires à la production et au commerce de ces produits finis. </p>
-
-				<picture>
-					<!-- intégrer le tag picture pour diviser article en 2 section : texte et picture -->
-				</picture>
 			</article>
+			<picture class="photo1">
+				<source media="(min-width: 650px)" srcset="img_pink_flowers.jpg">
+				<source media="(min-width: 465px)" srcset="img_white_flower.jpg">
+				<img src="img_orange_flowers.jpg" alt="Flowers" style="width:auto;">
+			</picture>
+			<!-- intégrer le tag picture pour diviser article en 2 section : texte et picture -->
 
-			<article class="article2"><div
+			<article class="article2">
 				<h4> Site de production (<a style="color:red;">Dax</a>) </h4>
 				<p> Le site de Dax a été ouvert en 1993 pour atteindre le marché professionnel des constructions en bois (mobilier urbain principalement). Dax a été retenu pour le choix du site pour sa proximité des forêts de pins, matière première des produits finis pour collectivités. Le site comprend un site de production, un entrepôt (selon le même modèle métier que Lille) ainsi que les locaux de bureaux nécessaire à sa gestion. </p>
 			</article>
+			<picture class="photo2">
+				<source media="(min-width: 650px)" srcset="img_pink_flowers.jpg">
+				<source media="(min-width: 465px)" srcset="img_white_flower.jpg">
+				<img src="img_orange_flowers.jpg" alt="Flowers" style="width:auto;">
+			</picture>
+			<!-- intégrer le tag picture pour diviser article en 2 section : texte et picture -->
 
 			<article class="article3">
 				<h4> Site de production (<a style="color:red;">Annecy</a>) </h4>
 				<p> Annecy a été ouvert en 2012 pour lancer le nouveau produit phare du Groupe : les maisons modulaires en bois. Ce nouveau produit devrait non seulement cibler les particuliers désireux d’améliorer leur qualité d’habitat mais également les professionnels souhaitant une construction de locaux à rendement plus élevé et à coût d’investissement faible. La ville d’Annecy a été choisie pour la proximité de sa cible commerciale potentielle mais également pour la proximité des forêts de pins et de mélèzes. Le site d’Annecy (comme les deux autres sites du Groupe) comprend un atelier de production, un entrepôt ainsi que les locaux de bureaux adéquats. Le site comprend également des constructions « témoins » visitables par les clients de l’entreprise.</p>
 			</article>
+			<picture class="photo3">
+				<source media="(min-width: 650px)" srcset="img_pink_flowers.jpg">
+				<source media="(min-width: 465px)" srcset="img_white_flower.jpg">
+				<img src="img_orange_flowers.jpg" alt="Flowers" style="width:auto;">
+			</picture>
+			<!-- intégrer le tag picture pour diviser article en 2 section : texte et picture -->
 
 			<article class="article4">
 				<h4> Magasins </h4>
 				<p> Le Groupe a ouvert 5 magasins depuis 1990 (Lille pour le premier, Annecy pour le dernier). Historiquement, l’entreprise ouvre un magasin à proximité de chacun de ses sites de production afin de garder un contact de proximité avec ses clients. Deux autres magasins ont été ouverts pendant cette période à Brest et à Macon. En l’absence de site de production, ces deux magasins ont été implantés dans des zones commerciales.</p>
 			</article>
+			<picture class="photo4">
+				<source media="(min-width: 650px)" srcset="img_pink_flowers.jpg">
+				<source media="(min-width: 465px)" srcset="img_white_flower.jpg">
+				<img src="img_orange_flowers.jpg" alt="Flowers" style="width:auto;">
+			</picture>
+			<!-- intégrer le tag picture pour diviser article en 2 section : texte et picture -->
 		</section>
 
 		<aside class="entreprise" aria-label="Sidebar">
@@ -85,7 +113,7 @@ Page 1 : Accueil -->
 				<h2> Détails sur l'entreprise </h2>
 				<p> Texte de présentation bref. Consulter la <a href="trombinoscope.html">structure organisationnelle de l'entreprise</a> </p>
 			</section>
-			<section class=""share">
+			<section class="share">
 				<h2> Share </h2>
 				<p> Liens réseaux sociaux </p>
 			</section>
