@@ -181,12 +181,12 @@ body {
 
             .photo1 {
                 grid-area: photo1;
-                background-color: white;
+                /*background-color: white;*/
             }
 
             .article2 {
                 grid-area: article2;
-                background-color: antiquewhite;
+                /*background-color: antiquewhite;*/
                 text-align: justify;
                 font-family: 'Ubuntu', sans-serif;
                 padding: 4em;
@@ -194,12 +194,12 @@ body {
 
             .photo2 {
                 grid-area: photo2;
-                background-color: white;
+                /*background-color: white;*/
 
             }
             .article3 {
                 grid-area: article3;
-                background-color: antiquewhite;
+                /*background-color: antiquewhite;*/
                 text-align: justify;
                 font-family: 'Ubuntu', sans-serif;
                 padding: 4em;
@@ -207,12 +207,12 @@ body {
 
             .photo3 {
                 grid-area: photo3;
-                background-color: white;
+                /*background-color: white;*/
             }
 
             .article4 {
                 grid-area: article4;
-                background-color: antiquewhite;
+                /*background-color: antiquewhite;*/
                 text-align: justify;
                 font-family: 'Ubuntu', sans-serif;
                 padding: 4em;
@@ -220,7 +220,7 @@ body {
 
             .photo4 {
                 grid-area: photo4;
-                background-color: white;
+                /*background-color: white;*/
             }
 
 
