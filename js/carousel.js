@@ -1,11 +1,3 @@
-/*new Vue({
-    el: 'image-slider',
-    data: {
-        images: ['http://i.imgur.com/vYdoAKu.jpg', 'http://i.imgur.com/PUD9HQL.jpg', 'http://i.imgur.com/Lfv18Sb.jpg', 'http://i.imgur.com/tmVJtna.jpg', 'http://i.imgur.com/ZfFAkWZ.jpg'],
-        currentNumber: 0
-    }
-});*/
-
 new Vue({
     el: 'image-slider',
     data: {

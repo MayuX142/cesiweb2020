@@ -46,7 +46,6 @@ ul {
 }
 
 li {
-    float: center;
     display: inline;
     margin : 50px;
     padding : 10px;
@@ -107,8 +106,8 @@ li a {
                 "primary-nav primary-nav";
     }
 
-        .logo {
-            grid-area: logo;
+        .logo1 {
+            grid-area: logo1;
             text-align: right;
         }
 
@@ -213,6 +212,10 @@ li a {
     .footer {
         grid-area: footer;
         /*background-color: blueviolet; */
+        display : grid;
+        grid-gap: 1em;
+        grid-template-areas:
+                "logo2 formulaire";
     }
 
 
