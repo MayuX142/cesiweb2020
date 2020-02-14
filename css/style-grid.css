@@ -225,38 +225,58 @@ li a {
 /* CSS CODE FOR MOBILE HERE */
 
 @media screen and (min-width: 768px) {
-
+    .sites {
+        grid-area : sites;
+        display : grid;
+        grid-gap: 1em;
+        grid-template-areas:
+                "photo1"
+                "article1"
+                "photo2"
+                "article2""
+                "photo3"
+                "article3""
+                "photo4"
+                "article4";
+    }
 }
 
 @media screen and (min-width: 992px) {
-
+    .sites {
+        grid-area : sites;
+        display : grid;
+        grid-gap: 1em;
+        grid-template-areas:
+                "photo1"
+                "article1"
+                "photo2"
+                "article2""
+                "photo3"
+                "article3""
+                "photo4"
+                "article4";
+    }
 }
 
 @media screen and (min-width: 1200px) {
-
+    .sites {
+        grid-area : sites;
+        display : grid;
+        grid-gap: 1em;
+        grid-template-areas:
+                "photo1"
+                "article1"
+                "photo2"
+                "article2""
+                "photo3"
+                "article3""
+                "photo4"
+                "article4";
+    }
 }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  /**********/
- /* PAGE 2 */
-/**********/
-
-/* CONTENT */
 
 .wrapper2 {
     background-color: yellow;
@@ -274,14 +294,14 @@ li a {
     color: black;
 }
 
-.box2{
-    background-color: #444;
-    color: #fff;
-    border-radius: 5px;
-    padding: 10px;
-    font-size: 90%;
-    text-align : center;
-}
+    .box2{
+        background-color: #444;
+        color: #fff;
+        border-radius: 5px;
+        padding: 10px;
+        font-size: 90%;
+        text-align : center;
+    }
 
 .orga {
     grid-column-start: 1;
